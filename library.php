@@ -254,6 +254,7 @@ $res = $library->book($id, $segment, $date);
 $count = 0;
 while($res['status'] == 0 && $count < 4){
     $res = $library->book($id, $segment, $date);
+    $count++;
 }
 
 
